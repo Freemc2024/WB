@@ -4,7 +4,7 @@ const yts = require("yt-search");
 cmd(
   {
     pattern: "yts",
-    alias: ["yts", "youtubesearch"],
+    alias: ["yts", "youtubesearch", "ytsearch"],
     react: "🔎",
     desc: "Search YouTube videos",
     category: "search",
@@ -48,7 +48,7 @@ ${formattedResults}
         from,
         {
           image: {
-            url: "https://ibb.co/bMjjZDND",
+            url: "https://github.com/Freemc2024/WB/blob/main/scr/yts.jpg?raw=true",
           },
           caption,
         },
