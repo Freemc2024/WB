@@ -5,7 +5,7 @@ const axios = require("axios");
 cmd(
   {
     pattern: "wall",
-    alias: ["wallpaper"],
+    alias: ["wallpaper", "wp", "4to"],
     react: "🖼️",
     desc: "Download HD Wallpapers",
     category: "download",
@@ -41,7 +41,7 @@ cmd(
         from,
         {
           image: {
-            url: "https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images/wpd.png?raw=true",
+            url: "https://github.com/Freemc2024/WB/blob/main/scr/wpd.jpg?raw=true",
           },
           caption: header,
         },
