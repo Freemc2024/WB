@@ -6,7 +6,7 @@ const path = require("path");
 const pendingMenu = {};
 const numberEmojis = ["0️⃣","1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣"];
 
-const headerImage = "https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images/DANUWA-MD.png?raw=true";
+const headerImage = "https://github.com/Freemc2024/WB/blob/main/scr/alive.jpg?raw=true";
 
 cmd({
   pattern: "menu",
@@ -14,8 +14,8 @@ cmd({
   desc: "Show command categories",
   category: "main",
   filename: __filename
-}, async (test, m, msg, { from, sender, reply }) => {
-  await test.sendMessage(from, { react: { text: "📋", key: m.key } });
+}, async (pasiya, m, msg, { from, sender, reply }) => {
+  await pasiya.sendMessage(from, { react: { text: "📋", key: m.key } });
 
   const commandMap = {};
 
@@ -38,7 +38,7 @@ cmd({
 
   menuText += `───────────────────────\n`;
 
-  await test.sendMessage(from, {
+  await pasiya.sendMessage(from, {
     image: { url: headerImage },
     caption: menuText,
   }, { quoted: m });
@@ -48,8 +48,8 @@ cmd({
 
 cmd({
   filter: (text, { sender }) => pendingMenu[sender] && pendingMenu[sender].step === "category" && /^[1-9][0-9]*$/.test(text.trim())
-}, async (test, m, msg, { from, body, sender, reply }) => {
-  await test.sendMessage(from, { react: { text: "✅", key: m.key } });
+}, async (pasiya, m, msg, { from, body, sender, reply }) => {
+  await pasiya.sendMessage(from, { react: { text: "✅", key: m.key } });
 
   const { commandMap, categories } = pendingMenu[sender];
   const index = parseInt(body.trim()) - 1;
@@ -66,7 +66,7 @@ cmd({
   cmdText += `───────────────────────\n`;
   cmdText += `Total Commands: ${cmdsInCategory.length}\n`;
 
-  await test.sendMessage(from, {
+  await pasiya.sendMessage(from, {
     image: { url: headerImage },
     caption: cmdText,
   }, { quoted: m });
