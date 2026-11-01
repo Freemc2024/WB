@@ -1,6 +1,7 @@
 
 const { cmd } = require("../command");
 const { ytmp3, ytmp4, tiktok } = require("sadaslk-dlcore");
+const yts = require("yt-search");
 
 cmd(
   {
