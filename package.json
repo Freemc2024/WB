@@ -1,0 +1,41 @@
+{
+  "name": "PASIYA-WhatsappBot",
+  "version": "1.0.0",
+  "description": "A Powerfull Whatsapp Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --deep-monitoring --attach --name PASIYA-WhatsappBot",
+    "stop": "pm2 stop PASIYA-WhatsappBot",
+    "restart": "pm2 restart PASIYA-WhatsappBot"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc14",
+    "api-dylux": "^1.8.6",
+    "axios": "^1.20.0",
+    "browser-id3-writer": "^6.4.0",
+    "cheerio": "^1.2.0",
+    "express": "^5.3.0",
+    "ffmpeg": "^1.1.3",
+    "ffmpeg-static": "^5.3.0",
+    "file_size_url": "^1.0.6",
+    "fluent-ffmpeg": "^2.1.3",
+    "fs-extra": "^11.4.1",
+    "megajs": "^1.3.10",
+    "node-fetch": "^3.3.2",
+    "node-id3": "^0.2.9",
+    "node-webpmux": "^3.2.1",
+    "path": "^0.12.7",
+    "pino": "^10.4.0",
+    "pm2": "^7.1.1",
+    "punycode": "^2.3.1",
+    "qrcode-terminal": "^0.12.0",
+    "tmp": "^0.2.7",
+    "util": "^0.12.5",
+    "vm": "^0.1.0",
+	"@xaviabot/fb-downloader": "^1.0.14",
+	"yt-search": "^2.13.1",
+	"@vreden/youtube_scraper": "^1.2.9",
+	"sadaslk-dlcore": "^1.0.0",
+	"puppeteer": "^25.16.0"
+  }
+}
