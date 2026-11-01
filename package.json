@@ -37,6 +37,8 @@
 	"@vreden/youtube_scraper": "^1.2.9",
 	"sadaslk-dlcore": "^1.0.0",
 	"puppeteer": "^25.16.0",
+	"wa-sticker-formatter": "^4.4.4",
+	"sharp": "^0.35.5",
 	"canvas": "^3.2.3"
   }
 }
